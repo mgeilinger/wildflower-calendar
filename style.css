@@ -4,28 +4,42 @@ body {
     padding: 0;
 }
 
-h1 {
+.header {
+    padding: 50px;
     text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
 }
 
-.grid-container {
+.grid {
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(5, 200px);
+    justify-content: center;
+    gap: 5px;
     padding: 20px;
 }
-
-.month {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
+  
+.flower {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+  
+.flower img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.month h2 {
-    margin-top: 0;
-}
-
-.month img {
-    max-width: 100%;
-    height: auto;
+.flower h2 {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    right: 0;
+    bottom: 0;
+    margin:0
 }
