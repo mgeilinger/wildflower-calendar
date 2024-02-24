@@ -147,10 +147,16 @@ nav ul {
     margin: 0;
     padding: 10px;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
   
 nav ul li {
     display: inline-block;
+}
+
+nav li {
+    margin-right: 10px;
 }
   
 nav ul li a {
@@ -163,4 +169,13 @@ nav ul li a {
 nav ul li a:hover {
     color: #ccc; /* Greyed out text on hover */
     background-color: rgba(255, 255, 255, 0.2); /* Slightly opaque background on hover */
+}
+
+#searchForm {
+    display: flex; /* Use flexbox to display form elements in a row */
+    margin-left: auto; /* Push the form to the right */
+}
+
+#flowerInput {
+    margin-right: 5px; /* Add some space between input and button */
 }
