@@ -38,9 +38,9 @@ body {
 }
   
 .flower img {
+    position: relative;
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .flower h2 {
@@ -51,6 +51,28 @@ body {
     right: 0;
     bottom: 0;
     margin:0
+}
+
+.flower h2 {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    opacity: 0;
+    background-color: transparent;
+    transition: opacity 1s ease;
+}
+
+.flower h2 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.flower:hover h2 {
+    opacity: 1;
 }
 
 .seasonsBar {
