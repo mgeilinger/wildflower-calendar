@@ -133,6 +133,18 @@ body {
     text-align:center;
 }
 
+.red-textbox {
+    width: 1000px;
+    background-color: #ff4828;
+    color: white;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+}
+
 nav {
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
